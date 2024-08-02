@@ -11,7 +11,6 @@ class LifeViewModel: ObservableObject {
     @Published var entities: [Entity] = []
     private var recentStates: [Entity] = []
     
-    
     func create() {
         let newEntity = Bool.random() ? Entity(type: .aliveCell) : Entity(type: .deadCell)
         entities.append(newEntity)
@@ -30,6 +29,5 @@ class LifeViewModel: ObservableObject {
                 recentStates.removeAll()
             }
         }
-        
     }
 }

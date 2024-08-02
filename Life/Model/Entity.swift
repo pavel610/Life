@@ -35,29 +35,28 @@ enum EntityState {
     }
     
     var emoji: String {
-            switch self {
-            case .aliveCell:
-                return "💥"
-            case .deadCell:
-                return "💀"
-            case .life:
-                return "🐣"
-            case .death:
-                return "☠️"
-            }
+        switch self {
+        case .aliveCell:
+            return "💥"
+        case .deadCell:
+            return "💀"
+        case .life:
+            return "🐣"
+        case .death:
+            return "☠️"
         }
-        
-        var gradientColors: [Color] {
-            switch self {
-            case .aliveCell:
-                return [Color.orange, Color.iconYellow]
-            case .deadCell:
-                return [Color.green, Color.iconGreen]
-            case .life:
-                return [Color.purple, Color.iconPink]
-            case .death:
-                return [Color.gray, Color.white]
-            }
+    }
+    
+    var gradientColors: [Color] {
+        switch self {
+        case .aliveCell:
+            return [Color.orange, Color.iconYellow]
+        case .deadCell:
+            return [Color.green, Color.iconGreen]
+        case .life:
+            return [Color.purple, Color.iconPink]
+        case .death:
+            return [Color.gray, Color.white]
         }
-
+    }
 }
