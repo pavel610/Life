@@ -14,7 +14,6 @@ struct LifeView: View {
         ZStack {
             LinearGradient(colors: [.bgPurple, .black], startPoint: UnitPoint(x: 0.5, y: 0.0), endPoint: UnitPoint(x: 0.5, y: 1))
                 .ignoresSafeArea()
-            
             VStack {
                 Text("Клеточное наполнение")
                     .foregroundStyle(.white)
